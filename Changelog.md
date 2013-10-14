@@ -35,6 +35,9 @@ Enhancements:
   be configured. (Xavier Shay)
 * Messages can be allowed or expected on in bulk via
   `receive_messages(:message => :value)` (Jon Rowe)
+* `instance_double` and `class_double` raise `ArgumentError` if the underlying
+  module is loaded and the arity of the method being invoked does not match the
+  arity of the method as it is actually implemented.  (Andy Lindeman)
 
 Deprecations:
 
